@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Random Number Alert</title>
+</head>
+<body>
+
+<script>
+// Function to generate a random number
+function generateRandomNumber() {
+    return Math.floor(Math.random() * 100) + 1; // Generates a random number between 1 and 100
+}
+
+// Function to show an alert with a random number
+function showAlert() {
+    var randomNumber = generateRandomNumber();
+    alert("Random Number: " + randomNumber);
+}
+
+// Attach an event listener to the 'keydown' event
+document.addEventListener('keydown', showAlert);
+</script>
+
+</body>
+</html>
